@@ -1,0 +1,30 @@
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+33,23,94,59,3,68,75,34,48,40,12,40,5,79,84,35,83,34,30,56,59,38,90,61 + true
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+11 / false
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+// This is a comment
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+71,62,21,43,30,16,25,66,66,44,7,74,98,18,85,70,41,67,95,16,32,8,98,5,37,91,35,71,14,16,45,1,98,14,63,6,20,58,7,81,62,43,91,22,13,47,85,69,15,54,56,3,61,75,58,27,5,51,87,95,94,18,37,98,22,96,64,65,22,85,67,91,28,37,50,48,54,27,53,16,29,69,44,93,94,76,24,28,16,17,67,74 * 81,77,86,92,87,86,14,90,95,51,66,38,93,31,88,83,6,17,19,8,85,22,29,21,43,96,38,3,75,38,90,34,24,94,14,38,1,36,62,54,33,50,43,85,23,57,19,89,61,38,33,60,71,32,87,16,71,16,5,6,18,44,74,90,68,20,24,16,64,44,24,3,4,71,5,75,91,56,56,38,37,5,32,62,59,17,60,92
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const greet = name => `Hello, ${name}!`;
+orange / 34
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+true + 39,15,21,54,0,10,71,13,76,69,79,61,29,65,44,25
+const randomNumber = getRandomNumber();
+87 - orange
+class MyClass { constructor() { this.property = getRandomString(); } }
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+true / kiwi
+const findLargestNumber = numbers => Math.max(...numbers);
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+class MyClass { constructor() { this.property = getRandomString(); } }
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
